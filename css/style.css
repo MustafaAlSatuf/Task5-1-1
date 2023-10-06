@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  padding: 20px;
+}
+.result {
+  height: 150px;
+  display: flex;
+  background-color: #253650;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem 1.5rem;
+  font-size: 40px;
+  color: white;
+  text-align: end;
+  text-shadow: 0 0 5px #219cf3;
+  box-shadow: inset 0 2px 2px 0 #1721316d, inset 0 5px 15px 0 #1721316d,
+    inset 0 15px 25px 0 #1721316d;
+  overflow: hidden;
+  word-break: break-all;
+}
+.calc {
+  max-width: 400px;
+  height: max-content;
+  margin: 50px auto;
+  background-color: #bfbfbf;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px 1px;
+}
+.buttons .btn {
+  min-height: 100px;
+  background-color: #253650;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.buttons .btn:active {
+  text-shadow: 0 0 5px #219cf3, 0 0 8px #02182958;
+  box-shadow: inset 0 2px 2px 0 #1721316d, inset 0 5px 15px 0 #1721316d,
+    inset 0 15px 25px 0 #1721316d;
+}
+.btn-zero {
+  grid-column: 1/3;
+}
+.btn-equal {
+  grid-row: 4/6;
+  grid-column: 4;
+  background-color: #e48020 !important;
+}
+.btn-del-all,
+.btn-del,
+.btn-div,
+.btn-mul,
+.btn-sum,
+.btn-sub {
+  background-color: #1f7f97 !important;
+}
